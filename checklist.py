@@ -12,3 +12,7 @@ def read(index):
 def update(index, item):
     checklist[index] = item
 
+# DESTROY
+def destroy(index):
+    checklist.pop(index)
+

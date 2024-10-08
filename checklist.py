@@ -7,3 +7,8 @@ def create(item):
 # READ
 def read(index):
     return checklist[index]
+
+# UPDATE
+def update(index, item):
+    checklist[index] = item
+

@@ -1,2 +1,1 @@
 checklist = list()
-checklist

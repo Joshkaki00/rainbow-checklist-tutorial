@@ -1,1 +1,1 @@
-checklist = list()
+print("Hello World")

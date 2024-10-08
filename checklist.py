@@ -23,7 +23,8 @@ def list_all_items():
         index += 1
 
 def mark_completed(index):
-    # Add code here that marks an item as completed
+    "√" + update
+
 
 def select(function_code):
     # Create item
@@ -46,7 +47,14 @@ def select(function_code):
     else:
         print("Unknown Option")
 
-
+def user_input(prompt):
+    # the input function will display a message in the terminal
+    # and wait for user input.
+    user_input = input(prompt)
+    return user_input
+user_value = user_input("Please Enter a value:")
+print(user_value)
+    
 def test():
     create("purple sox")
     create("red cloak")

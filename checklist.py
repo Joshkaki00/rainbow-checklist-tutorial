@@ -22,6 +22,31 @@ def list_all_items():
         print(str(index) + list_item)
         index += 1
 
+def mark_completed(index):
+    # Add code here that marks an item as completed
+
+def select(function_code):
+    # Create item
+    if function_code == "C":
+        input_item = user_input("Input item:")
+        create(input_item)
+
+    # Read item
+    elif function_code == "R":
+        item_index = user_input("Index Number?")
+
+        # Remember that item_index must actually exist or our program will crash.
+        read(item_index)
+
+    # Print all items
+    elif function_code == "P":
+        list_all_items()
+
+    # Catch all
+    else:
+        print("Unknown Option")
+
+
 def test():
     create("purple sox")
     create("red cloak")
@@ -34,6 +59,10 @@ def test():
     destroy(1)
 
     print(read(0))
+    select("C")
+
+    list_all_items()
+    select("R")
 
     list_all_items()
 
